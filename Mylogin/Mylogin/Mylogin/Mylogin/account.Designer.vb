@@ -22,46 +22,79 @@ Partial Class account
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxInfo = New System.Windows.Forms.GroupBox()
+        Me.nu = New System.Windows.Forms.RadioButton()
+        Me.nam = New System.Windows.Forms.RadioButton()
+        Me.dob = New System.Windows.Forms.DateTimePicker()
         Me.email = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.sdt = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.quequan = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.gender = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cmnd = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ten = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.GroupBox1.SuspendLayout()
+        Me.updateBtn = New System.Windows.Forms.Button()
+        Me.saveBtn = New System.Windows.Forms.Button()
+        Me.GroupBoxInfo.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'GroupBoxInfo
         '
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox1.Controls.Add(Me.email)
-        Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.sdt)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.quequan)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.gender)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.cmnd)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.ten)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(564, 468)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.GroupBoxInfo.Controls.Add(Me.nu)
+        Me.GroupBoxInfo.Controls.Add(Me.nam)
+        Me.GroupBoxInfo.Controls.Add(Me.dob)
+        Me.GroupBoxInfo.Controls.Add(Me.email)
+        Me.GroupBoxInfo.Controls.Add(Me.Label8)
+        Me.GroupBoxInfo.Controls.Add(Me.sdt)
+        Me.GroupBoxInfo.Controls.Add(Me.Label7)
+        Me.GroupBoxInfo.Controls.Add(Me.quequan)
+        Me.GroupBoxInfo.Controls.Add(Me.Label6)
+        Me.GroupBoxInfo.Controls.Add(Me.Label5)
+        Me.GroupBoxInfo.Controls.Add(Me.Label4)
+        Me.GroupBoxInfo.Controls.Add(Me.cmnd)
+        Me.GroupBoxInfo.Controls.Add(Me.Label3)
+        Me.GroupBoxInfo.Controls.Add(Me.ten)
+        Me.GroupBoxInfo.Controls.Add(Me.Label2)
+        Me.GroupBoxInfo.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBoxInfo.Name = "GroupBoxInfo"
+        Me.GroupBoxInfo.Size = New System.Drawing.Size(564, 468)
+        Me.GroupBoxInfo.TabIndex = 0
+        Me.GroupBoxInfo.TabStop = False
+        Me.GroupBoxInfo.Text = "Thông tin cá nhân"
+        '
+        'nu
+        '
+        Me.nu.AutoSize = True
+        Me.nu.Location = New System.Drawing.Point(219, 117)
+        Me.nu.Name = "nu"
+        Me.nu.Size = New System.Drawing.Size(39, 17)
+        Me.nu.TabIndex = 47
+        Me.nu.TabStop = True
+        Me.nu.Text = "Nữ"
+        Me.nu.UseVisualStyleBackColor = True
+        '
+        'nam
+        '
+        Me.nam.AutoSize = True
+        Me.nam.Location = New System.Drawing.Point(124, 117)
+        Me.nam.Name = "nam"
+        Me.nam.Size = New System.Drawing.Size(47, 17)
+        Me.nam.TabIndex = 46
+        Me.nam.TabStop = True
+        Me.nam.Text = "Nam"
+        Me.nam.UseVisualStyleBackColor = True
+        '
+        'dob
+        '
+        Me.dob.Location = New System.Drawing.Point(124, 237)
+        Me.dob.Name = "dob"
+        Me.dob.Size = New System.Drawing.Size(200, 20)
+        Me.dob.TabIndex = 45
         '
         'email
         '
@@ -113,13 +146,6 @@ Partial Class account
         Me.Label6.Size = New System.Drawing.Size(62, 15)
         Me.Label6.TabIndex = 39
         Me.Label6.Text = "Quê quán:"
-        '
-        'gender
-        '
-        Me.gender.Location = New System.Drawing.Point(124, 112)
-        Me.gender.Name = "gender"
-        Me.gender.Size = New System.Drawing.Size(134, 20)
-        Me.gender.TabIndex = 38
         '
         'Label5
         '
@@ -175,40 +201,56 @@ Partial Class account
         Me.Label2.TabIndex = 31
         Me.Label2.Text = "Họ và tên:"
         '
-        'DateTimePicker1
+        'updateBtn
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(124, 237)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 45
+        Me.updateBtn.Location = New System.Drawing.Point(631, 36)
+        Me.updateBtn.Name = "updateBtn"
+        Me.updateBtn.Size = New System.Drawing.Size(99, 51)
+        Me.updateBtn.TabIndex = 1
+        Me.updateBtn.Text = "CHỈNH SỬA"
+        Me.updateBtn.UseVisualStyleBackColor = True
+        '
+        'saveBtn
+        '
+        Me.saveBtn.Location = New System.Drawing.Point(634, 136)
+        Me.saveBtn.Name = "saveBtn"
+        Me.saveBtn.Size = New System.Drawing.Size(95, 43)
+        Me.saveBtn.TabIndex = 2
+        Me.saveBtn.Text = "Lưu"
+        Me.saveBtn.UseVisualStyleBackColor = True
         '
         'account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(870, 492)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.saveBtn)
+        Me.Controls.Add(Me.updateBtn)
+        Me.Controls.Add(Me.GroupBoxInfo)
         Me.Name = "account"
         Me.Text = "TÀI KHOẢN"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GroupBoxInfo.ResumeLayout(False)
+        Me.GroupBoxInfo.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBoxInfo As GroupBox
     Friend WithEvents email As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents sdt As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents quequan As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents gender As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents cmnd As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents ten As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dob As DateTimePicker
+    Friend WithEvents nu As RadioButton
+    Friend WithEvents nam As RadioButton
+    Friend WithEvents updateBtn As Button
+    Friend WithEvents saveBtn As Button
 End Class

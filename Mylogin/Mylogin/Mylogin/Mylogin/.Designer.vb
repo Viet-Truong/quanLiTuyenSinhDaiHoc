@@ -28,10 +28,10 @@ Partial Class DangKiNguyenVong
         Me.thm = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.dangKyBtn = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.GroupBoxNganh = New System.Windows.Forms.GroupBox()
+        Me.nameNganh = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxInfo = New System.Windows.Forms.GroupBox()
         Me.email = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.sdt = New System.Windows.Forms.TextBox()
@@ -47,8 +47,8 @@ Partial Class DangKiNguyenVong
         Me.ten = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.dangkinguyenvongGV, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
+        Me.GroupBoxNganh.SuspendLayout()
+        Me.GroupBoxInfo.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -104,27 +104,27 @@ Partial Class DangKiNguyenVong
         Me.dangKyBtn.Text = "Đăng ký"
         Me.dangKyBtn.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'GroupBoxNganh
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.thm)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.maNganh)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(296, 229)
-        Me.GroupBox1.TabIndex = 20
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Thông tin ngành"
+        Me.GroupBoxNganh.Controls.Add(Me.nameNganh)
+        Me.GroupBoxNganh.Controls.Add(Me.Label10)
+        Me.GroupBoxNganh.Controls.Add(Me.Label9)
+        Me.GroupBoxNganh.Controls.Add(Me.thm)
+        Me.GroupBoxNganh.Controls.Add(Me.Label1)
+        Me.GroupBoxNganh.Controls.Add(Me.maNganh)
+        Me.GroupBoxNganh.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBoxNganh.Name = "GroupBoxNganh"
+        Me.GroupBoxNganh.Size = New System.Drawing.Size(296, 229)
+        Me.GroupBoxNganh.TabIndex = 20
+        Me.GroupBoxNganh.TabStop = False
+        Me.GroupBoxNganh.Text = "Thông tin ngành"
         '
-        'TextBox1
+        'nameNganh
         '
-        Me.TextBox1.Location = New System.Drawing.Point(87, 107)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(134, 20)
-        Me.TextBox1.TabIndex = 20
+        Me.nameNganh.Location = New System.Drawing.Point(87, 107)
+        Me.nameNganh.Name = "nameNganh"
+        Me.nameNganh.Size = New System.Drawing.Size(134, 20)
+        Me.nameNganh.TabIndex = 20
         '
         'Label10
         '
@@ -136,29 +136,29 @@ Partial Class DangKiNguyenVong
         Me.Label10.TabIndex = 19
         Me.Label10.Text = "Tên ngành:"
         '
-        'GroupBox2
+        'GroupBoxInfo
         '
-        Me.GroupBox2.Controls.Add(Me.email)
-        Me.GroupBox2.Controls.Add(Me.dangKyBtn)
-        Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Controls.Add(Me.sdt)
-        Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Controls.Add(Me.quequan)
-        Me.GroupBox2.Controls.Add(Me.Label6)
-        Me.GroupBox2.Controls.Add(Me.gender)
-        Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.dob)
-        Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.cmnd)
-        Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.ten)
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Location = New System.Drawing.Point(331, 12)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(527, 229)
-        Me.GroupBox2.TabIndex = 21
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Thông tin cá nhân"
+        Me.GroupBoxInfo.Controls.Add(Me.email)
+        Me.GroupBoxInfo.Controls.Add(Me.dangKyBtn)
+        Me.GroupBoxInfo.Controls.Add(Me.Label8)
+        Me.GroupBoxInfo.Controls.Add(Me.sdt)
+        Me.GroupBoxInfo.Controls.Add(Me.Label7)
+        Me.GroupBoxInfo.Controls.Add(Me.quequan)
+        Me.GroupBoxInfo.Controls.Add(Me.Label6)
+        Me.GroupBoxInfo.Controls.Add(Me.gender)
+        Me.GroupBoxInfo.Controls.Add(Me.Label5)
+        Me.GroupBoxInfo.Controls.Add(Me.dob)
+        Me.GroupBoxInfo.Controls.Add(Me.Label4)
+        Me.GroupBoxInfo.Controls.Add(Me.cmnd)
+        Me.GroupBoxInfo.Controls.Add(Me.Label3)
+        Me.GroupBoxInfo.Controls.Add(Me.ten)
+        Me.GroupBoxInfo.Controls.Add(Me.Label2)
+        Me.GroupBoxInfo.Location = New System.Drawing.Point(331, 12)
+        Me.GroupBoxInfo.Name = "GroupBoxInfo"
+        Me.GroupBoxInfo.Size = New System.Drawing.Size(527, 229)
+        Me.GroupBoxInfo.TabIndex = 21
+        Me.GroupBoxInfo.TabStop = False
+        Me.GroupBoxInfo.Text = "Thông tin cá nhân"
         '
         'email
         '
@@ -284,17 +284,17 @@ Partial Class DangKiNguyenVong
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(870, 530)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GroupBoxInfo)
+        Me.Controls.Add(Me.GroupBoxNganh)
         Me.Controls.Add(Me.dangkinguyenvongGV)
         Me.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "DangKiNguyenVong"
         Me.Text = "ĐĂNG KÍ NGUYỆN VỌNG"
         CType(Me.dangkinguyenvongGV, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
+        Me.GroupBoxNganh.ResumeLayout(False)
+        Me.GroupBoxNganh.PerformLayout()
+        Me.GroupBoxInfo.ResumeLayout(False)
+        Me.GroupBoxInfo.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -305,10 +305,10 @@ Partial Class DangKiNguyenVong
     Friend WithEvents thm As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents dangKyBtn As Button
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents GroupBoxNganh As GroupBox
+    Friend WithEvents nameNganh As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents GroupBoxInfo As GroupBox
     Friend WithEvents email As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents sdt As TextBox

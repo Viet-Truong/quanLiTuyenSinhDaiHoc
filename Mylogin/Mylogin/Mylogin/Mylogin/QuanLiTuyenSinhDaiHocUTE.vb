@@ -17,12 +17,7 @@ Public Class QuanLiTuyenSinhDaiHocUTE
     End Sub
     'METHODS'
     Private Function SelectThemeColor() As Color
-        Dim index As Integer = random.[Next](ThemesColor.ColorList.Count)
-        While tempIndex = index
-            index = random.[Next](ThemesColor.ColorList.Count)
-        End While
-        tempIndex = index
-        Dim color As String = ThemesColor.ColorList(index)
+        Dim color As String = ThemesColor.ColorList(0)
         Return ColorTranslator.FromHtml(color)
     End Function
     Private Sub ActivateButton(btnSender As Object)
@@ -75,7 +70,7 @@ Public Class QuanLiTuyenSinhDaiHocUTE
     Private Sub Reset()
         DisableButton()
         lblTitle.Text = "TRANG CHỦ"
-        panelTitleBar.BackColor = Color.FromArgb(0, 150, 136)
+        panelTitleBar.BackColor = Color.FromArgb(51, 204, 255)
         PanelLogo.BackColor = Color.FromArgb(51, 153, 255)
         currentButton = New Button()
         btnCloseChildForm.Visible = False
