@@ -29,7 +29,7 @@
         If filter.Text = "Ngành" Then
             sqlQuery = String.Format("Select * from nganh where nameNganh like N'%{0}%'", value)
         ElseIf filter.Text = "Năm" Then
-            sqlQuery = String.Format("Select * from nganh where nam = '%{0}%'", value)
+            sqlQuery = String.Format("Select * from nganh where nam = '{0}'", value)
         End If
         Dim dtable As DataTable = _DBAccess.GetDataTable(sqlQuery)
         Me.nganhGV.DataSource = dtable

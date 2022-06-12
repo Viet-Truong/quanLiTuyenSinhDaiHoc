@@ -42,3 +42,24 @@ C:\Users\vieth\OneDrive\Máy tính\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin
 C:\Users\vieth\OneDrive\Máy tính\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.exe
 C:\Users\vieth\OneDrive\Máy tính\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.xml
 C:\Users\vieth\OneDrive\Máy tính\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.pdb
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\bin\Debug\QuanLiTuyenSinhUTE.exe.config
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\bin\Debug\QuanLiTuyenSinhUTE.exe
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\bin\Debug\QuanLiTuyenSinhUTE.pdb
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\bin\Debug\QuanLiTuyenSinhUTE.xml
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\bin\Debug\Guna.UI.pdb
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhDaiHoc.vbproj.AssemblyReference.cache
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhDaiHoc.vbproj.SuggestedBindingRedirects.cache
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.DangKiNguyenVong.resources
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.Introduction.resources
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.Login.resources
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.Resources.resources
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.QuanLiTuyenSinhDaiHocUTE.resources
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.updateNV.resources
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.xemDiemChuan.resources
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhDaiHoc.vbproj.GenerateResource.cache
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhDaiHoc.vbproj.CoreCompileInputs.cache
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhDaiHoc.vbproj.CopyComplete
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.exe
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.xml
+C:\Users\AD\Desktop\quanLiTuyenSinhDaiHoc\Mylogin\Mylogin\Mylogin\Mylogin\obj\Debug\QuanLiTuyenSinhUTE.pdb

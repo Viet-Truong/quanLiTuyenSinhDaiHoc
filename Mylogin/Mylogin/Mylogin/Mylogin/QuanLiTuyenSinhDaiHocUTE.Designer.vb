@@ -26,7 +26,6 @@ Partial Class QuanLiTuyenSinhDaiHocUTE
         Me.panelMenu = New System.Windows.Forms.Panel()
         Me.logoutBtn = New System.Windows.Forms.Button()
         Me.introductionBtn = New System.Windows.Forms.Button()
-        Me.accountBtn = New System.Windows.Forms.Button()
         Me.updateNVBtn = New System.Windows.Forms.Button()
         Me.dknvBtn = New System.Windows.Forms.Button()
         Me.xemDiemChuanBtn = New System.Windows.Forms.Button()
@@ -50,7 +49,6 @@ Partial Class QuanLiTuyenSinhDaiHocUTE
         Me.panelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.panelMenu.Controls.Add(Me.logoutBtn)
         Me.panelMenu.Controls.Add(Me.introductionBtn)
-        Me.panelMenu.Controls.Add(Me.accountBtn)
         Me.panelMenu.Controls.Add(Me.updateNVBtn)
         Me.panelMenu.Controls.Add(Me.dknvBtn)
         Me.panelMenu.Controls.Add(Me.xemDiemChuanBtn)
@@ -68,7 +66,7 @@ Partial Class QuanLiTuyenSinhDaiHocUTE
         Me.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.logoutBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.logoutBtn.ForeColor = System.Drawing.Color.White
-        Me.logoutBtn.Location = New System.Drawing.Point(0, 490)
+        Me.logoutBtn.Location = New System.Drawing.Point(0, 410)
         Me.logoutBtn.Name = "logoutBtn"
         Me.logoutBtn.Size = New System.Drawing.Size(241, 80)
         Me.logoutBtn.TabIndex = 6
@@ -82,26 +80,12 @@ Partial Class QuanLiTuyenSinhDaiHocUTE
         Me.introductionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.introductionBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.introductionBtn.ForeColor = System.Drawing.Color.White
-        Me.introductionBtn.Location = New System.Drawing.Point(0, 410)
+        Me.introductionBtn.Location = New System.Drawing.Point(0, 330)
         Me.introductionBtn.Name = "introductionBtn"
         Me.introductionBtn.Size = New System.Drawing.Size(241, 80)
         Me.introductionBtn.TabIndex = 5
         Me.introductionBtn.Text = "GIỚI THIỆU"
         Me.introductionBtn.UseVisualStyleBackColor = True
-        '
-        'accountBtn
-        '
-        Me.accountBtn.Dock = System.Windows.Forms.DockStyle.Top
-        Me.accountBtn.FlatAppearance.BorderSize = 0
-        Me.accountBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.accountBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.accountBtn.ForeColor = System.Drawing.Color.White
-        Me.accountBtn.Location = New System.Drawing.Point(0, 330)
-        Me.accountBtn.Name = "accountBtn"
-        Me.accountBtn.Size = New System.Drawing.Size(241, 80)
-        Me.accountBtn.TabIndex = 4
-        Me.accountBtn.Text = "TÀI KHOẢN"
-        Me.accountBtn.UseVisualStyleBackColor = True
         '
         'updateNVBtn
         '
@@ -261,7 +245,6 @@ Partial Class QuanLiTuyenSinhDaiHocUTE
     Friend WithEvents PanelLogo As Panel
     Friend WithEvents logoutBtn As Button
     Friend WithEvents introductionBtn As Button
-    Friend WithEvents accountBtn As Button
     Friend WithEvents updateNVBtn As Button
     Friend WithEvents dknvBtn As Button
     Friend WithEvents xemDiemChuanBtn As Button

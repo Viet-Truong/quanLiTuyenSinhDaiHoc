@@ -97,10 +97,6 @@ Public Class QuanLiTuyenSinhDaiHocUTE
         OpenChildForm(New updateNV(), sender)
     End Sub
 
-    Private Sub accountBtn_Click(sender As Object, e As EventArgs) Handles accountBtn.Click
-        OpenChildForm(New account(), sender)
-    End Sub
-
     Private Sub introductionBtn_Click(sender As Object, e As EventArgs) Handles introductionBtn.Click
         OpenChildForm(New Introduction(), sender)
     End Sub

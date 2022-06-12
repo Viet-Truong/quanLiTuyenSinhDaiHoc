@@ -1,6 +1,6 @@
-﻿create database tuyensinhdaihoc2
+﻿create database tuyensinhdaihoc
 go
-use tuyensinhdaihoc2
+use tuyensinhdaihoc
 
 go 
 create table nam
@@ -43,26 +43,22 @@ create table nguoidung
 	sdt varchar(10) not null,
 	email varchar(25) null,
 	cmnd varchar(12) not null primary key,
-	userName varchar(10) null
-	foreign key(userName) references account(userName)
-	on delete
-		cascade
-	on update
-		cascade
 )
 
 create table nguyenvong
 (
 	idNganh int not null,
+	tenNganh nvarchar(30) null,
 	nameUser nvarchar(30) null,
 	cmnd varchar(12) not null,
-	nam int not null
+	nam int not null,
+	tohopmon varchar(4) not null
 	primary key(idNganh, cmnd, nam)
 	foreign key(cmnd) references nguoidung(cmnd)
 	on delete
 		cascade
 	on update
-		cascade,
+		cascade
 )
 
 go
@@ -90,4 +86,4 @@ set dateformat dmy
 go
 insert into nguoidung
 values
-(N'Bùi Viết Trường', '02-08-2002', 'Nam', N'Thừa Thiên Huế', '0789416451', 'viettruong0825@gmail', '201830627', 'truong')
+(N'Bùi Viết Trường', '02-08-2002', 'Nam', N'Thừa Thiên Huế', '0789416451', 'viettruong0825@gmail', '201830627')

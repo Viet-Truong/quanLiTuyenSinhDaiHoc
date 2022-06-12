@@ -98,12 +98,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="account.Designer.vb">
-      <DependentUpon>account.vb</DependentUpon>
-    </Compile>
-    <Compile Include="account.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Color.vb" />
     <Compile Include=".Designer.vb">
       <DependentUpon>dangKiNguyenVong.vb</DependentUpon>
@@ -161,9 +155,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="account.resx">
-      <DependentUpon>account.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="dangKiNguyenVong.resx">
       <DependentUpon>dangKiNguyenVong.vb</DependentUpon>
     </EmbeddedResource>

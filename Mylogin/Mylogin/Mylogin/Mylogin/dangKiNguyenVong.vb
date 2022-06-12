@@ -1,6 +1,29 @@
-﻿Public Class DangKiNguyenVong
+﻿Imports System.Configuration
+Imports System.Data.SqlClient
+Public Class DangKiNguyenVong
     Private _DBAccess As New DataAccess
-
+    Private _connectionString As String = ConfigurationSettings.AppSettings("MyConnectionString")
+    Private con As SqlConnection
+    Private da As SqlDataAdapter
+    'dinh nghia ham lay du lieu do vao table
+    Private Function getDataTable(sqlQuery As String) As DataTable
+        Dim dtable As New DataTable
+        'khoi tao bien con
+        con = New SqlConnection(_connectionString)
+        'khoi tao bien da
+        da = New SqlDataAdapter(sqlQuery, con)
+        Try
+            'open connection
+            con.Open()
+            'do du lieu vao dtable
+            da.Fill(dtable)
+        Catch ex As Exception
+            'MsgBox(ex.Message, "error") 'thong bao neu co loi
+        Finally
+            con.Close()
+        End Try
+        Return dtable
+    End Function
     'dinh nghia thu tuc load du lieu
     Private Sub loadDataGridView()
         Dim sqlQuery As String = String.Format("select idNganh, nameNganh, toHopMon from nganh where nam = 2021 group by idNganh, nameNganh, toHopMon")
@@ -20,10 +43,20 @@
         loadDataGridView()
     End Sub
 
-    Private Function insert() As Boolean
+    Private Function insertNV() As Boolean
         Dim sqlQuery As String = "Insert into nguyenvong "
-        sqlQuery += String.Format("values('{0}', N'{1}', '{2}', '{3}')", maNganh.Text, ten.Text, cmnd.Text, 2022)
+        sqlQuery += String.Format("values('{0}', N'{1}', N'{2}', '{3}', '{4}', N'{5}')", maNganh.Text, nameNganh.Text, ten.Text, cmnd.Text, 2022, thm.Text)
         Return _DBAccess.ExecuteNoneQuery(sqlQuery)
+    End Function
+    Private Function insertND() As Boolean
+        Dim sqlQuery As String = String.Format("Select * from nguoidung where cmnd = '{0}'", cmnd.Text)
+        Dim dtable As DataTable = getDataTable(sqlQuery)
+        If dtable.Rows.Count <= 0 Then
+            Dim sqlQuery1 As String = "Insert into nguoidung "
+            sqlQuery1 += String.Format("values('N{0}', '{1}', N'{2}', N'{3}', '{4}', '{5}', '{6}')", ten.Text, dob.Text, gender.Text, quequan.Text, sdt.Text, email.Text, cmnd.Text)
+            Return _DBAccess.ExecuteNoneQuery(sqlQuery1)
+        End If
+        Return True
     End Function
 
     Private Function isEmpty() As Boolean
@@ -34,10 +67,12 @@
         If isEmpty() Then
             MsgBox("Vui long nhap day du thong tin")
         Else
-            If insert() Then
-                MsgBox("Dang ky nguyen vong thanh cong")
-            Else
-                MsgBox("Dang ki k thanh cong")
+            If insertND() Then
+                If insertNV() Then
+                    MsgBox("Dang ky nguyen vong thanh cong")
+                Else
+                    MsgBox("Dang ki k thanh cong")
+                End If
             End If
         End If
     End Sub

@@ -72,16 +72,18 @@ Partial Class DangKiNguyenVong
         '
         'maNganh
         '
+        Me.maNganh.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.maNganh.Location = New System.Drawing.Point(87, 25)
         Me.maNganh.Name = "maNganh"
-        Me.maNganh.Size = New System.Drawing.Size(134, 20)
+        Me.maNganh.Size = New System.Drawing.Size(134, 22)
         Me.maNganh.TabIndex = 2
         '
         'thm
         '
+        Me.thm.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.thm.Location = New System.Drawing.Point(87, 64)
         Me.thm.Name = "thm"
-        Me.thm.Size = New System.Drawing.Size(134, 20)
+        Me.thm.Size = New System.Drawing.Size(134, 22)
         Me.thm.TabIndex = 18
         '
         'Label9
@@ -121,9 +123,10 @@ Partial Class DangKiNguyenVong
         '
         'nameNganh
         '
+        Me.nameNganh.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nameNganh.Location = New System.Drawing.Point(87, 107)
         Me.nameNganh.Name = "nameNganh"
-        Me.nameNganh.Size = New System.Drawing.Size(134, 20)
+        Me.nameNganh.Size = New System.Drawing.Size(134, 22)
         Me.nameNganh.TabIndex = 20
         '
         'Label10
@@ -162,9 +165,10 @@ Partial Class DangKiNguyenVong
         '
         'email
         '
+        Me.email.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.email.Location = New System.Drawing.Point(103, 64)
         Me.email.Name = "email"
-        Me.email.Size = New System.Drawing.Size(134, 20)
+        Me.email.Size = New System.Drawing.Size(134, 22)
         Me.email.TabIndex = 30
         '
         'Label8
@@ -179,9 +183,10 @@ Partial Class DangKiNguyenVong
         '
         'sdt
         '
+        Me.sdt.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sdt.Location = New System.Drawing.Point(362, 28)
         Me.sdt.Name = "sdt"
-        Me.sdt.Size = New System.Drawing.Size(134, 20)
+        Me.sdt.Size = New System.Drawing.Size(134, 22)
         Me.sdt.TabIndex = 28
         '
         'Label7
@@ -196,9 +201,10 @@ Partial Class DangKiNguyenVong
         '
         'quequan
         '
+        Me.quequan.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.quequan.Location = New System.Drawing.Point(103, 147)
         Me.quequan.Name = "quequan"
-        Me.quequan.Size = New System.Drawing.Size(134, 20)
+        Me.quequan.Size = New System.Drawing.Size(134, 22)
         Me.quequan.TabIndex = 26
         '
         'Label6
@@ -213,9 +219,10 @@ Partial Class DangKiNguyenVong
         '
         'gender
         '
+        Me.gender.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gender.Location = New System.Drawing.Point(103, 105)
         Me.gender.Name = "gender"
-        Me.gender.Size = New System.Drawing.Size(134, 20)
+        Me.gender.Size = New System.Drawing.Size(134, 22)
         Me.gender.TabIndex = 24
         '
         'Label5
@@ -230,9 +237,10 @@ Partial Class DangKiNguyenVong
         '
         'dob
         '
+        Me.dob.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dob.Location = New System.Drawing.Point(362, 67)
         Me.dob.Name = "dob"
-        Me.dob.Size = New System.Drawing.Size(134, 20)
+        Me.dob.Size = New System.Drawing.Size(134, 22)
         Me.dob.TabIndex = 22
         '
         'Label4
@@ -247,9 +255,10 @@ Partial Class DangKiNguyenVong
         '
         'cmnd
         '
+        Me.cmnd.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmnd.Location = New System.Drawing.Point(362, 104)
         Me.cmnd.Name = "cmnd"
-        Me.cmnd.Size = New System.Drawing.Size(134, 20)
+        Me.cmnd.Size = New System.Drawing.Size(134, 22)
         Me.cmnd.TabIndex = 20
         '
         'Label3
@@ -264,9 +273,10 @@ Partial Class DangKiNguyenVong
         '
         'ten
         '
+        Me.ten.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ten.Location = New System.Drawing.Point(103, 28)
         Me.ten.Name = "ten"
-        Me.ten.Size = New System.Drawing.Size(134, 20)
+        Me.ten.Size = New System.Drawing.Size(134, 22)
         Me.ten.TabIndex = 18
         '
         'Label2

@@ -23,7 +23,7 @@ Partial Class Login
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation3 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
+        Dim Animation1 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.p1 = New Guna.UI.WinForms.GunaPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -263,7 +263,7 @@ Partial Class Login
         Me.rePass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.rePass.HintForeColor = System.Drawing.Color.Silver
         Me.rePass.HintText = "Re-Enter Password"
-        Me.rePass.isPassword = False
+        Me.rePass.isPassword = True
         Me.rePass.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.rePass.LineIdleColor = System.Drawing.Color.Gray
         Me.rePass.LineMouseHoverColor = System.Drawing.Color.Silver
@@ -325,7 +325,7 @@ Partial Class Login
         Me.passSignUp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.passSignUp.HintForeColor = System.Drawing.Color.Silver
         Me.passSignUp.HintText = "Password"
-        Me.passSignUp.isPassword = False
+        Me.passSignUp.isPassword = True
         Me.passSignUp.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.passSignUp.LineIdleColor = System.Drawing.Color.Gray
         Me.passSignUp.LineMouseHoverColor = System.Drawing.Color.Silver
@@ -361,22 +361,22 @@ Partial Class Login
         '
         Me.anima1.AnimationType = Guna.UI.Animation.AnimationType.Scale
         Me.anima1.Cursor = Nothing
-        Animation3.AnimateOnlyDifferences = True
-        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
-        Animation3.LeafCoeff = 0!
-        Animation3.MaxTime = 1.0!
-        Animation3.MinTime = 0!
-        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
-        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
-        Animation3.MosaicSize = 0
-        Animation3.Padding = New System.Windows.Forms.Padding(0)
-        Animation3.RotateCoeff = 0!
-        Animation3.RotateLimit = 0!
-        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
-        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
-        Animation3.TimeCoeff = 0!
-        Animation3.TransparencyCoeff = 0!
-        Me.anima1.DefaultAnimation = Animation3
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.anima1.DefaultAnimation = Animation1
         '
         'Login
         '

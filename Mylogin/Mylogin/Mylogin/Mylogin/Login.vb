@@ -83,6 +83,7 @@ Public Class Login
         End If
     End Sub
 
+
     Private Sub closeBtn_Click(sender As Object, e As EventArgs) Handles closeBtn.Click
         Me.Close()
     End Sub
@@ -98,7 +99,6 @@ Public Class Login
             If passSignUp.Text = rePass.Text Then
                 insert(userSignup.Text, passSignUp.Text)
                 MsgBox("Dang ki thanh cong")
-                'inputInfo.show(userSignup.Text)
             Else
                 MsgBox("mat khau k trung khop")
             End If
@@ -106,6 +106,16 @@ Public Class Login
             MsgBox("vui long nhap day du thong tin")
         ElseIf checkUser(userSignup.Text) Then
             MsgBox("tai khoan da ton tai")
+        End If
+    End Sub
+
+    Private Sub GunaCheckBox2_Click(sender As Object, e As EventArgs) Handles GunaCheckBox2.Click
+        If password.isPassword And rePass.isPassword Then
+            password.isPassword = False
+            rePass.isPassword = False
+        Else
+            password.isPassword = True
+            rePass.isPassword = True
         End If
     End Sub
 End Class
